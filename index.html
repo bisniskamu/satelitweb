@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Domain Success - Satelitweb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0061ff;
+            --secondary: #60efff;
+            --dark: #0f172a;
+            --slate: #64748b;
+            --bg: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            color: var(--primary);
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            max-width: 900px;
+            width: 100%;
+            border-radius: 32px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #dcfce7;
+            color: #166534;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 32px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.description {
+            font-size: 1.25rem;
+            color: var(--slate);
+            max-width: 650px;
+            margin: 0 auto 48px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 24px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature-item h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .feature-item p {
+            font-size: 0.875rem;
+            color: var(--slate);
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 36px;
+            border-radius: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--dark);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #1e293b;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-outline {
+            border: 1px solid #e2e8f0;
+            color: var(--dark);
+        }
+
+        .btn-outline:hover {
+            background: #f8fafc;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            color: var(--slate);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 40px 20px;
+                border-radius: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SATELITWEB.</div>
+    </nav>
+
+    <main class="main-content">
+        <div class="card">
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                Sertifikat SSL & Domain Aktif
+            </div>
+            
+            <h1>Contoh Tutorial Custom Domain GitHub Selesai</h1>
+            
+            <p class="description">
+                Konfigurasi DNS dan integrasi GitHub Pages telah berhasil dilakukan. Halaman ini adalah contoh tampilan profesional untuk proyek Anda.
+            </p>
+
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Ultra Responsive</h3>
+                    <p>Tampilan otomatis menyesuaikan di perangkat Mobile, Tablet, dan Desktop.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>High Performance</h3>
+                    <p>Optimasi kode yang ringan memastikan waktu loading di bawah 1 detik.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Modern Stack</h3>
+                    <p>Menggunakan standar HTML5 dan CSS Modern tanpa library eksternal yang berat.</p>
+                </div>
+            </div>
+
+            <div class="cta-group">
+                <a href="https://satelitweb.com" class="btn btn-primary">Layanan Satelitweb</a>
+                <a href="#" class="btn btn-outline">Lihat Dokumentasi</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Satelitweb Indonesia. Seluruh hak cipta dilindungi undang-undang.
+    </footer>
+
+</body>
+</html>
